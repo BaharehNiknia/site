@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 
 
 //import './index.css';
-//import Form from './App';
+import Header from './components/header.js';
+import Footer from './components/Footer.js';
 
 
 //class Chosen extends React.Component {
@@ -34,7 +35,7 @@ import ReactDOM from 'react-dom';
  // res.write('</form>y');
 //  return res.end();
 //}).listen(8010); 
-
+   
 //var MongoClient=require('mongodb').MongoClient;
 //var url = "mongodb://localhost:1040/mydb";
 
@@ -45,11 +46,15 @@ import ReactDOM from 'react-dom';
 //  console.log("Database created!");
 //  db.close();
 //});
-function Fill(){
-    return <h1>hellosite Bahareh Niknia test</h1>
-}
+//function Fill(){
+ //   return <h1>hellosite Bahareh Niknia test</h1>
+//}
 ReactDOM.render(
-    <Fill></Fill>,
+    <fragment>
+    <Header></Header>
+    <Footer></Footer>
+    </fragment>
+    ,
     document.getElementById('root')
 )
 
