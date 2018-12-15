@@ -17,10 +17,10 @@ class Header extends React.Component{
           <Navbar.Toggle />
         </Navbar.Header>
         <Nav>
-          <NavItem eventKey={1} href="/About">
+          <NavItem eventKey={1} href="#">
             About
           </NavItem>
-          <NavItem eventKey={2} href="https://google.com">
+          <NavItem eventKey={2} href={"../../../src/About.js"}>
             ContactUs
           </NavItem>
           <NavDropdown eventKey={3} title="Releases" id="basic-nav-dropdown">
