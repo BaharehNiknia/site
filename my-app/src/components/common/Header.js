@@ -1,37 +1,33 @@
 import React from 'react'
 import {Navbar, Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap';
-//import About from "../../../src/About.js"
+
 class Header extends React.Component{
-  //  constructor(props){
-//super(props);
-//this.handleSelect=this.handleSelect.bind(this);
-//this.state={index:0,direction:null};
- //   }//"../../../src/About.js"
  render(){
      return(
         <Navbar inverse="true">
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="#home">MySiteHome</a>
+            <a href={`/home`}>MySiteHome</a>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
         <Nav>
-          <NavItem eventKey={1} href="#">
+          <NavItem eventKey={1} href={`/about`}>
             About
           </NavItem>
-          <NavItem eventKey={2} href={"../../../src/About.js"}>
+          <NavItem eventKey={2} href={`/contact`}>
             ContactUs
           </NavItem>
           <NavDropdown eventKey={3} title="Releases" id="basic-nav-dropdown">
-            <MenuItem eventKey={3.1}>Program1</MenuItem>
-            <MenuItem eventKey={3.2}>Program2</MenuItem>
-            <MenuItem eventKey={3.3}>Program3</MenuItem>
+            <MenuItem eventKey={3.1} href={`/Releases`}>Program1</MenuItem>
+            <MenuItem eventKey={3.2} href={`/Releases`}>Program2</MenuItem>
+            <MenuItem eventKey={3.3} href={`/Releases`}>Program3</MenuItem>
             <MenuItem divider />
-            <MenuItem eventKey={3.4}>AboutPrograms</MenuItem>
+            <MenuItem eventKey={3.4} href={`/Releases`}>AboutPrograms</MenuItem>
           </NavDropdown>
         </Nav>
       </Navbar>
+     
      );
  }}
 
