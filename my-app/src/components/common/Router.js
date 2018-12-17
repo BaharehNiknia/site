@@ -1,9 +1,22 @@
-import { BrowserRouter as Router, Link, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import App from "../../App.js";
 import Abb from "../../Abb.js";
 import Cntct from "../../Cntct.js";
 import Release from "../../Release.js";
+import ShowQs from "../../ShowQs.js";
 import React from 'react'
+
+//const posts = [
+  //  { id: 1, title: 'First', content: 'Hello world!' },
+ //   { id: 2, title: 'Second', content: 'Hello again!' }
+ // ]
+  
+  //const Post = ({post}) => (
+  //  <div>
+   //   <h2>{post.title}</h2>
+   //   {post.title}
+  //  </div>
+  //)
 
 class Router1 extends React.Component{
    render(){
@@ -15,13 +28,14 @@ class Router1 extends React.Component{
             <Route path="/about" component={Abb} />
             <Route path="/contact" component={Cntct} />
             <Route path="/Releases" component={Release} />
+            <Route path="/Qs" component={ShowQs} />
           </main>
         </div>
       </Router>);
    }}
 
 export default Router1;
-//<aside>
+//<aside>//            <Route exact path="/post/:id" render={({match}) => (<Post post={posts.find(p => p.id === match.params.id)} />)} />
 //<Link to={`/`}>App</Link>
  //  <Link to={`/home`}>Home</Link>
  // <Link to={`/about`}>About</Link>
