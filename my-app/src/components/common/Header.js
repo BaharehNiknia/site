@@ -19,7 +19,7 @@ class Header extends React.Component{
             ContactUs
           </NavItem>
           <NavDropdown eventKey={3} title="Releases" id="basic-nav-dropdown">
-            <MenuItem eventKey={3.1} href={`/Releases`}>Program1</MenuItem>
+            <MenuItem eventKey={3.1} href={`/Server`}>Server</MenuItem>
             <MenuItem eventKey={3.2} href={`/Releases`}>Program2</MenuItem>
             <MenuItem eventKey={3.3} href={`/Qs?a=2`}>Querystring</MenuItem>
             <MenuItem divider />
