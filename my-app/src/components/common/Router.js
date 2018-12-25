@@ -4,6 +4,7 @@ import Abb from "../../Abb.js";
 import Cntct from "../../Cntct.js";
 import Release from "../../Release.js";
 import ShowQs from "../../ShowQs.js";
+import Servershow from "../../Servershow.js";
 import React from 'react';
 import RouteNotFound from "../../RouteNotFound.js";
 
@@ -30,14 +31,15 @@ class Router1 extends React.Component{
             <Route path="/contact" component={Cntct} />
             <Route path="/Releases" component={Release} />
             <Route path="/Qs" component={ShowQs} />
-            <Route render={() => <RouteNotFound />}></Route>
+            <Route path="/server" component={Servershow} />
+           
           </main>
         </div>
       </Router>);
    }}
 
 export default Router1;
-
+// <Route render={() => <RouteNotFound />}></Route>
 //<aside>//            <Route exact path="/post/:id" render={({match}) => (<Post post={posts.find(p => p.id === match.params.id)} />)} />
 //<Link to={`/`}>App</Link>
  //  <Link to={`/home`}>Home</Link>
