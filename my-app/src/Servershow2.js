@@ -5,7 +5,7 @@ class Servershow extends Component {
   state = {users: []}
 
   componentDidMount() {
-    fetch('/about')
+    fetch('/users')
       .then(res => res.json())
       .then(users => this.setState({ users }));
   }

@@ -5,6 +5,7 @@ import Cntct from "../../Cntct.js";
 import Release from "../../Release.js";
 import ShowQs from "../../ShowQs.js";
 import Servershow from "../../Servershow.js";
+import Servershow2 from "../../Servershow2.js";
 import React from 'react';
 import RouteNotFound from "../../RouteNotFound.js";
 
@@ -32,6 +33,7 @@ class Router1 extends React.Component{
             <Route path="/Releases" component={Release} />
             <Route path="/Qs" component={ShowQs} />
             <Route path="/server" component={Servershow} />
+            <Route path="/server2" component={Servershow2} />
            
           </main>
         </div>

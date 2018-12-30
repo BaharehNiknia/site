@@ -24,6 +24,7 @@ class Header extends React.Component{
             <MenuItem eventKey={3.3} href={`/Qs?a=2`}>Querystring</MenuItem>
             <MenuItem divider />
             <MenuItem eventKey={3.4} href={`/post/:1`}>AboutPrograms</MenuItem>
+            <MenuItem eventKey={3.5} href={`/Server2`}>Server</MenuItem>
           </NavDropdown>
         </Nav>
       </Navbar>
